@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  color: orange;
+  font-size: 50px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 30vw;
+  height: 30vw;
+  margin: auto;
+  margin-top: 50px;
+  /* background-color: orange; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.cell {
+  width: 33.3%;
+  height: 33.3%;
+  margin: 0;
+  padding: 0;
+}
+
+.cell:nth-child(3n + 1) {
+  border-right: 5px solid orange;
+  border-bottom: 5px solid orange;
+}
+
+.cell:nth-child(3n + 2) {
+  border-bottom: 5px solid orange;
+  border-right: 5px solid orange;
+}
+
+.cell:nth-child(3n + 3) {
+  border-bottom: 5px solid orange;
+}
+
+.cell:nth-child(n + 7) {
+  border-bottom: none;
+}
