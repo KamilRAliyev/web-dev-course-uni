@@ -12,7 +12,8 @@ body {
 }
 
 .container {
-  width: 60vw;
+  width: 55vw;
+  height: 100vh;
   margin: auto;
   padding: 25px;
   background-color: silver;
@@ -20,6 +21,8 @@ body {
 .card-container {
   background-color: white;
   margin: auto;
+  width: 80%;
+  height: 100%;
   padding: 4vw;
 }
 
