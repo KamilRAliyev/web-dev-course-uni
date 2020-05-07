@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap");
+
+:root {
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --very-pale-blue: hsl(207, 100%, 98%);
+  --pale-black: #222;
+  --pink: hsl(322, 100%, 66%);
+  --heading: "Poppins", sans-serif;
+  --body: "Open Sans", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* *::after *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--body);
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+}
+
+main {
+    padding: 5vh 15vh;
+}
+
+/* 
+* Navbar 
+*/
+
+nav {
+  margin-top: 5em;
+  display: -webkit-flex;
+  display: flexbox;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-self: center;
+  justify-content: space-between;
+}
+
+.logo,
+.tryItFree {
+  margin: auto 0;
+  cursor: pointer;
+}
+
+.tryItFree a {
+  display: inline-block;
+  text-transform: capitalize;
+  padding: 0.5em 2em;
+  border: 2px solid var(--pink);
+  color: var(--pink);
+  border-radius: 999em;
+  text-decoration: none;
+}
+
+.tryItFree a:hover {
+  color: var(--very-pale-blue);
+  background-color: var(--pink);
+}
+
+/* 
+* /Navbar 
+*/
+
+/* 
+* Offer
+*/
+
+.offer {
+  margin-top: 12rem;
+  text-align: center;
+}
+
+.offer h1 {
+  font-size: 3em;
+}
+
+.offer p {
+  width: 40%;
+  margin: auto;
+  font-size: 1.2em;
+  color: var(--very-dark-cyan);
+}
+
+.offer a {
+  margin: 3em 0;
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 1.2em;
+  font-weight: 800;
+  padding: 1.3em 5em;
+  color: var(--very-pale-blue);
+  background-color: var(--pink);
+  border-radius: 999em;
+}
+
+/* 
+* /Offer
+*/
+
+/* Big Image */
+.bigImage img {
+  margin-top: 2em;
+  width: 100%;
+}
+/* /bigImage */
+
+/* Messages */
+.messages {
+  justify-content: space-evenly;
+  display: flex;
+  margin-top: 5em;
+}
+
+.message {
+  width: 30%;
+}
+
+.message span {
+  font-family: var(--heading);
+  font-weight: 700;
+  font-size: 6em;
+}
+
+.message p {
+  font-size: 2em;
+  color: var(--very-dark-cyan);
+}
+
+/* /section */
+
+.mobile {
+  display: none;
+}
+
+.articles img {
+  width: 100%;
+  color: var(--very-pale-blue);
+}
+
+article {
+  margin-top: -0.5em;
+  padding: 3em 0;
+  display: -webkit-flex;
+  display: flexbox;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-self: center;
+  justify-content: space-between;
+}
+
+article div {
+  width: 30vw;
+  margin: auto;
+}
+
+article:nth-child(2n + 1) {
+  background-color: var(--very-pale-blue);
+}
+
+article:nth-child(2n) {
+  background-color: white;
+}
+
+/* article end */
+/* Offer-2 */
+
+.offer_build {
+  text-align: center;
+  padding: 2em;
+}
+
+.offer_build h1 {
+  font-size: 3em;
+}
+
+.offer_build a {
+  margin: 5em 0;
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 1.2em;
+  font-weight: 800;
+  padding: 1.3em 5em;
+  color: var(--very-pale-blue);
+  background-color: var(--pink);
+  border-radius: 999em;
+}
+
+/* Footer */
+
+.footer {
+    display: flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer {
+    background-color: var(--very-dark-cyan);
+    margin-top: -0.5em;
+    padding-top: 5em;
+}
+
+.footer div {
+    padding: 0.5em 1em;
+}
+
+.copy, .subscribe{
+    width: 25%;
+    padding: 1em 0;
+}
+
+footer img {
+    width: 100%;
+}
+
+
+.logo1 img {
+    width: 4em;
+}
+
+.logo1 span {
+    color: var(--very-pale-blue);
+    font-size: 4em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.text {
+    color: var(--very-pale-blue);
+}
+
+
+.contact img{
+    width: 1em;
+}
+
+.contact a {
+    margin-left: 0.5em;
+    color: var(--very-pale-blue);
+    text-decoration: none;
+}
+
+.subscribe span {
+    color: var(--very-pale-blue);
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.subscribe p {
+    color: var(--very-pale-blue);
+}
+
+input[type="email"] {
+    border: none;
+    padding: 1.1em 0;
+    width: 60%;
+    border-radius: 0.7em;
+}
+
+button {
+    width: 30%;
+    margin-left: 1em;
+    padding: 1em 1.5em;
+    border-radius: 5%;
+    font-size: 1em;
+    font-weight: 800;
+    border: none;
+    color: var(--very-pale-blue);
+    background-color: var(--pink);
+    border-radius: 0.7em;
+}
+
+.socialLinks{
+    background-color: var(--very-dark-cyan);
+    padding-top: 2em;
+    padding-bottom: 7em;
+}
